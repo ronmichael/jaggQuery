@@ -1,9 +1,7 @@
 jaggQuery
 =========
 
-Aggregate function extension for jQuery
-
-Currently supports sum, min and max.
+Aggregate function extension for jQuery. Currently supports sum, min and max.
 
 
 

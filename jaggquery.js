@@ -23,7 +23,7 @@ $.fn.max = function () {
     var max = null, idx = 0, last = this.length;
     for (; idx < last; idx++) {
         var v = parseFloat(this[idx].value);
-        if(!isNaN(v) && (max===null || v>min)) max = v;
+        if(!isNaN(v) && (max===null || v>max)) max = v;
     }
     return max;
 };

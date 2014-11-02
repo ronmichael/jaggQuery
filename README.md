@@ -1,7 +1,7 @@
 jaggQuery
 =========
 
-Aggregate function extension for jQuery. Currently supports sum, min and max.
+Aggregate function extension for jQuery. Currently supports sum, avg, min and max. Silently ignores all non-numeric values.
 
 
 
@@ -15,5 +15,6 @@ Examples
     $("input").sum() -> 15
     $("input").min() -> 3
     $("input").max() -> 12
+    $("input").avg() -> 7.5
 
 

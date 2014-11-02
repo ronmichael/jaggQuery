@@ -9,6 +9,17 @@ $.fn.sum = function () {
 };
 
 
+$.fn.avg = function () {
+    var sum = 0, idx = 0, count = 0, last = this.length;
+    for(; idx < last; idx++) {
+        var v = parseFloat(this[idx].value);
+        if(!isNaN(v)) count++, sum += v;
+    }
+    if(count==0) return null;
+    else return sum/count;
+};
+
+
 $.fn.min = function () {
     var min = null, idx = 0, last = this.length;
     for (; idx < last; idx++) {

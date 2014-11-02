@@ -20,10 +20,10 @@ $.fn.min = function () {
 
 
 $.fn.max = function () {
-    var min = null, idx = 0, last = this.length;
+    var max = null, idx = 0, last = this.length;
     for (; idx < last; idx++) {
         var v = parseFloat(this[idx].value);
-        if(!isNaN(v) && (min===null || v>min)) min = v;
+        if(!isNaN(v) && (max===null || v>min)) max = v;
     }
-    return min;
+    return max;
 };
